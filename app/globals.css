@@ -19,3 +19,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.Banner{background-image:url(../public/bikebanar.jpg) ;background-size: cover; width: 100vw; height: 100vh;background-position: center; }
+
+
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  /* Background color for arrow buttons */
+   /* Icon color for arrow buttons */
+  border-radius: 50%; /* Optional: Make the arrows circular */
+  width: 40px;
+  height: 40px;
+  background-color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+ font-size:40px;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+ /* Background color on hover */
+  color: #fff !important; 
+ 
+  /* Icon color on hover */
+}
