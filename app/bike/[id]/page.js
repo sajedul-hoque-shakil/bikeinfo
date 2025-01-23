@@ -48,11 +48,11 @@ const handlePrev = () => {
 
   return (
     <section className=" bg-slate-200 py-10">
-      <Card  className="w-[1000px] mx-auto my-15">
+      <Card  className="w-[1000px] mx-auto my-15 ">
       <h1 className="text-5xl font-black text-center">{data.name} </h1>
         <section className="flex"> 
-          <div className="overflow-hidden">
-            <Carousel  ref={carouselRef} infinite={false} dots={false} className="w-[700px] " >
+          <div className="">
+            <Carousel  ref={carouselRef} infinite={false} dots={false} className="w-[700px] max-h-[350px] min-h-[340px] overflow-y-hidden " >
   {[data.img, data.img1, data.img2, data.img3, data.img4, data.img5, data.img6,data.img7, data.img8, data.img9, data.img10, data.img11, data.img12,data.img13, data.img14, data.img15, data.img16, data.img17, data.img18,data.img19, data.img20, data.img21, data.img22, data.img23, data.img24,data.img25, data.img26, data.img27, data.img28, data.img29, data.img30,data.img31, data.img32, data.img33, data.img34].map(
     (img, index) =>
       img && (
@@ -62,7 +62,7 @@ const handlePrev = () => {
       )
   )}
 </Carousel>
-<div  className="text-center -mt-60">
+<div  className="text-center ">
         <Button  type="primary" onClick={handlePrev} className="mr-5">
           Previous
         </Button>
