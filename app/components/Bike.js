@@ -21,6 +21,7 @@ const Bike = ({data}) => {
          <Image src={datas.img} width={200} height={200} alt={datas.name}  className=''/>
         
       }>
+      <h1>{datas.name}</h1>
       <p>{datas.ExShowroom}</p>
       <p>{datas.price}</p>
       <p>On-Road Price, Pune
